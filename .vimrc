@@ -24,3 +24,12 @@ set showmatch
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
+
+" Setting background
+set background=dark
+
+map @@x !%xmllint --format --recover -^M
+au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
+
+filetype indent on
+set smartindent
