@@ -33,3 +33,6 @@ au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
 
 filetype indent on
 set smartindent
+
+ " Highlighting the searches
+ set hlsearch 
