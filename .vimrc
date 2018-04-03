@@ -34,5 +34,12 @@ au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
 filetype indent on
 set smartindent
 
- " Highlighting the searches
- set hlsearch 
+" Highlighting the searches
+set hlsearch
+t-Right to move the current tab to the left or right.
+
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+" nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+" nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
+
