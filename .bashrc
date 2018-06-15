@@ -131,3 +131,8 @@ function cd() {
     title=`basename $PWD`
     echo -ne "\033]0;$title\007"; 
 }
+
+function tpd() {
+    cd $(dirname $(which $1));
+}
+
