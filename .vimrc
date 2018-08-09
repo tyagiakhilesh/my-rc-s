@@ -1,4 +1,5 @@
 
+
 " enable syntax highlighting
 syntax enable
 
@@ -45,3 +46,4 @@ nnoremap <C-Right> :tabnext<CR>
 " nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 
 set backupdir=$HOME/.vim_backup
+set ruler
